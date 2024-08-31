@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Repellee</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./imagens/favico.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="body">
+    <div id="game">
+      <div id="stats">
+        <span class="stat"
+          >XP: <strong><span id="xpText">0</span></strong>
+        </span>
+        <span class="stat"
+          >Saúde: <strong><span id="healthText">100</span></strong>
+        </span>
+        <span class="stat"
+          >Moedas: <strong><span id="goldText">50</span></strong>
+        </span>
+      </div>
+      <div id="controls">
+        <button id="button1" onclick="change1()">Ir até a loja</button>
+        <button id="button2" onclick="change2()">Ir ate a masmorra</button>
+        <button id="button3" onclick="change3()">Lutar com o dragão</button>
+        
+      </div>
+      <div id="monsterStats">
+        <span class="stat"
+          >Nome do monstro: <strong><span id="monsterName"></span></strong>
+        </span>
+        <span class="stat"
+          >Saúde do monstro: <strong><span id="monsterHealth"></span></strong>
+        </span>
+      </div>
+      <div id="text">
+        <p>
+          Bem-vindo ao
+
+          <strong>Dragon Repellee.</strong> Você deve derrotar o dragão, fazendo
+          com que os habitantes da cidade mantenham-se a salvo. Você está no
+          centro da cidade, aonde você deseja ir? Use os botões acima.
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
